@@ -1,0 +1,15 @@
+RewriteEngine On
+#URL AMIGABLES
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+Options All -Indexes
+
+#EVITAR ACCEDER A CARPETAS QUE NO TENGAN UN Index.php/index.html 
+Options All -Indexes
+
+#MANEJO DE EXCEPCIONES EN EL SERVIDOR 404
+ErrorDocument 400 /rutas/unauthorized.php
+ErrorDocument 401 /rutas/unauthorized.php
+ErrorDocument 403 /rutas/unauthorized.php
+ErrorDocument 404 /rutas/404.php
