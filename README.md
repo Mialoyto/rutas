@@ -5,9 +5,9 @@
 ### Párrafo
 
 **LISTA DE TAREAS**
-- [] TAREA 01
-- [] TAREA 02
-- [] TAREA 03
+- [x] \TAREA 01
+- [ ] \TAREA 02
+- [ ] \TAREA 03
 
 *LISTA #01*
 - Uno
