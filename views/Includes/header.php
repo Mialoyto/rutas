@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="<?= SERVERURL ?>plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/adminlte.min.css">
+<!-- ESTILOS PERSONALIZADOS -->
+ <link rel="stylesheet" href="<?= SERVERURL ?>dist/css/estilos.css">
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -124,9 +126,27 @@
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?=SERVERURL ?>/views/clientes/listar-cliente" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
-                <p>Simple Link</p>
+                <p>Clientes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?=SERVERURL ?>/views/productos/listar-producto" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>productos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?=SERVERURL ?>/views/usuarios/listar-usuario" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>Usuarios</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="<?=SERVERURL ?>/views/ventas/listar-venta" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>Ventas</p>
               </a>
             </li>
           </ul>
